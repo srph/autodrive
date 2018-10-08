@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import s from './styles'
 
 interface UiFieldProps {
+  id?: string
   label: string
   children: JSX.Element
   disabled?: boolean
@@ -61,7 +62,7 @@ export default function UiField(props: UiFieldProps) {
   const actions = props.actions ? (Array.isArray(props.actions) ? props.actions : [props.actions]) : []
   return (
     <ui.Field innerRef={props.wrapperRef} disabled={props.disabled}>
-      <ui.Label>
+      <ui.Label for={props.id}>
         <span>{props.label}</span>
         {props.error && Boolean(props.error.length) && <ui.LabelError>Invalid JSON!</ui.LabelError>}
         {Boolean(actions.length) && (
@@ -75,6 +76,7 @@ export default function UiField(props: UiFieldProps) {
         )}
       </ui.Label>
       {React.cloneElement(props.children, {
+        id: props.id,
         disabled: props.disabled
       })}
       {props.tooltip && props.tooltip.length && <ui.Tooltip dangerouslySetInnerHTML={{ __html: props.tooltip }} />}

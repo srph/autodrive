@@ -19,6 +19,7 @@ ui.Input = styled.input`
 `
 
 interface UiInputProps {
+  id?: string
   readonly?: boolean
   value: string
   onChange: (input: string) => void
@@ -29,6 +30,7 @@ export default class UiInput extends React.Component<UiInputProps> {
   render() {
     return (
       <ui.Input
+        id={this.props.id}
         readonly={this.props.readonly}
         value={this.props.value}
         onChange={this.handleChange}
