@@ -51,8 +51,8 @@ export default class UiInput extends React.Component<UiInputProps> {
     // @source https://stackoverflow.com/a/30496488/2698227
     // common browser -> e.originalEvent.clipboardData
     // uncommon browser -> window.clipboardData
-    var clipboardData = evt.clipboardData || evt.originalEvent.clipboardData || window.clipboardData
-    var pastedData = clipboardData.getData('text')
+    const clipboardData = evt.clipboardData || evt.originalEvent.clipboardData || window.clipboardData
+    const pastedData = clipboardData.getData('text')
     this.props.onPaste(pastedData)
   }
 }
