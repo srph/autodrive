@@ -57,7 +57,7 @@ ui.ActionsItem = styled.div`
   }
 `
 
-export default function Input(props: UiFieldProps) {
+export default function UiField(props: UiFieldProps) {
   const actions = props.actions ? (Array.isArray(props.actions) ? props.actions : [props.actions]) : []
   return (
     <ui.Field innerRef={props.wrapperRef} disabled={props.disabled}>
@@ -67,7 +67,7 @@ export default function Input(props: UiFieldProps) {
         {Boolean(actions.length) && (
           <ui.Actions>
             {actions.map((action, i) => (
-              <ui.ActionsItem>
+              <ui.ActionsItem key={i}>
                 {React.cloneElement(action, { disabled: action.props.disabled || props.disabled })}
               </ui.ActionsItem>
             ))}
