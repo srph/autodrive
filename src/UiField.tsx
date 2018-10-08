@@ -33,6 +33,7 @@ ui.Label = styled.label`
   font-size: 12px;
   margin-bottom: 8px;
   text-transform: uppercase;
+  color: ${s['color-dark-dark-silver']};
 `
 ui.LabelError = styled.div`
   font-size: 10px;
@@ -44,6 +45,7 @@ ui.Tooltip = styled.div`
   margin-top: 12px;
   font-size: 10px;
   font-style: italic;
+  color: ${s['color-dark-silver']};
 `
 ui.Actions = styled.div`
   display: flex;
