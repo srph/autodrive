@@ -55,7 +55,8 @@ class App extends React.Component<void, AppState> {
                     Generate
                   </UiButton>
                 </UiTooltip>
-              }>
+              }
+              tooltip="Copy your shareable link either from the desktop version or on the drive.google.com version.">
               <UiInput value={this.state.input} onChange={this.handleInputChange} onPaste={this.handleInputPaste} />
             </UiField>
           </UiTransitionFadeIn>
@@ -72,7 +73,8 @@ class App extends React.Component<void, AppState> {
                 <CopyButton text="Output" value={this.state.output}>
                   Copy
                 </CopyButton>
-              ]}>
+              ]}
+              tooltip="Don't forget to give permissions to anyone with the link!">
               <UiInput readonly value={this.state.output} />
             </UiField>
           </UiTransitionFadeIn>

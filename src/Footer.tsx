@@ -11,6 +11,7 @@ ui.Wrapper = styled.div`
   text-align: center;
   color: ${s['color-dark-silver']};
   font-size: 12px;
+  line-height: 1.5;
 
   a {
     color: ${s['color-dark-silver']};
@@ -26,6 +27,15 @@ export default function UiFooter() {
       </a>. View{' '}
       <a href="https://github.com/srph/jayson" target="_blank">
         source code
+      </a>.
+      <br />
+      Thanks to{' '}
+      <a href="http://thebiobucket.blogspot.com/" target="_blank">
+        Kay Chichini
+      </a>{' '}
+      for{' '}
+      <a href="http://thebiobucket.blogspot.com/2011/10/how-to-link-to-google-docs-for-download.html" target="_blank">
+        this blog post
       </a>.
     </ui.Wrapper>
   )
