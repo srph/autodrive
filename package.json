@@ -36,5 +36,5 @@
     "typescript": "^2.7.2"
   },
   "keywords": [],
-  "description": "Generate an autodownload url for a google drive file."
+  "description": "Generate direct-dowlonad links from a Google Drive URL"
 }
