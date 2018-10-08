@@ -25,7 +25,7 @@ export default function UiFooter() {
       <a href="https://kierb.com" target="_blank">
         Kier Borromeo
       </a>. View{' '}
-      <a href="https://github.com/srph/jayson" target="_blank">
+      <a href="https://github.com/srph/autodrive" target="_blank">
         source code
       </a>.
       <br />
