@@ -14,9 +14,8 @@ export default {
   'color-light-lavender': '#6466bf',
   'drop-shadow': '0px 2px 4px rgba(0,0,0,0.1)',
   'drop-shadow-lower': '0px 4px 4px rgba(0,0,0,0.1)',
-  'font-family': '"Poppins", sans-serif',
-  'font-family-heading': '"Montserrat", "Poppins", sans-serif',
-  'font-family-serif': '"Playfair Display", serif',
+  'font-family': `'Inter UI','San Francisco',-apple-system,'BlinkMacSystemFont','".SFSNText-Regular"','Segoe UI','Ubuntu','Helvetica',sans-serif`,
+  'font-family-heading': `"Montserrat", 'Inter UI','San Francisco',-apple-system,'BlinkMacSystemFont','".SFSNText-Regular"','Segoe UI','Ubuntu','Helvetica',sans-serif`,
   'font-family-mono': '"Dank Mono", "Fira Sans", "Roboto Mono", "Consolas", "Courier New", monospace',
   'font-size': 14,
   'border-radius': 3

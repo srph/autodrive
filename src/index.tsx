@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { render } from 'react-dom'
 import 'sanitize.css'
+import './fonts/inter-ui/style.css'
 import UiContainer from './UiContainer'
 import UiHeader from './UiHeader'
 import UiField from './UiField'
