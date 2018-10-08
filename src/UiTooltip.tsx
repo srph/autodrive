@@ -18,6 +18,8 @@ ui.Wrapper = styled.div`
   font-family: ${s['font-family']};
   pointer-events: none;
   white-space: nowrap;
+  text-transform: none;
+  font-weight: 400;
 `
 ui.Arrow = styled.div`
   position: absolute;
