@@ -8,4 +8,5 @@ Generate direct-download links from a Google Drive URL.
 
 ## Attribution
 - [CodeSandbox](https://codesandbox.io/) for allowing me to scaffold this app in no time.
-- [Kay Chichini (theBioBucket)](http://thebiobucket.blogspot.com/) for his [blog post](http://thebiobucket.blogspot.com/2011/10/how-to-link-to-google-docs-for-download.html).
+- [Kay Chichini (theBioBucket)](http://thebiobucket.blogspot.com/) for his [blog post](http://thebiobucket.blogspot.com/2011/10/how-to-link-to-google-doc
+- [Rasmus Andersson (@rsms)](https://twitter.com/rsms) for [Inter UI](https://rsms.me/inter/)
