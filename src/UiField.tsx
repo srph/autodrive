@@ -62,7 +62,7 @@ export default function UiField(props: UiFieldProps) {
   const actions = props.actions ? (Array.isArray(props.actions) ? props.actions : [props.actions]) : []
   return (
     <ui.Field innerRef={props.wrapperRef} disabled={props.disabled}>
-      <ui.Label for={props.id}>
+      <ui.Label htmlFor={props.id}>
         <span>{props.label}</span>
         {props.error && Boolean(props.error.length) && <ui.LabelError>Invalid JSON!</ui.LabelError>}
         {Boolean(actions.length) && (
