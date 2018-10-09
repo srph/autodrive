@@ -20,7 +20,7 @@ ui.Header = styled.h1`
   display: inline-block;
   margin-top: 0;
   margin-bottom: 16px;
-  color: ${s['color-blue']};
+  color: ${s['color-green']};
   text-align: center;
   font-size: 64px;
 `
@@ -29,7 +29,7 @@ ui.HeaderLine = styled.div`
   top: 50%;
   transform: translateY(-50%);
   left: calc(100% + 24px);
-  background: ${s['color-sky-blue']};
+  background: ${s['color-green']};
   width: 48px;
   height: 2px;
 `

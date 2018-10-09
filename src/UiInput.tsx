@@ -16,10 +16,15 @@ ui.Input = styled.input`
   &:focus {
     box-shadow: 0 0 0 3px ${s['color-dark-silver']};
   }
+
+  ::placeholder {
+    color: ${s['color-dark-silver']};
+  }
 `
 
 interface UiInputProps {
   id?: string
+  placeholder?: string
   readonly?: boolean
   value: string
   onChange: (input: string) => void
@@ -32,6 +37,7 @@ export default class UiInput extends React.Component<UiInputProps> {
       <ui.Input
         id={this.props.id}
         readonly={this.props.readonly}
+        placeholder={this.props.placeholder}
         value={this.props.value}
         onChange={this.handleChange}
         onPaste={this.handlePaste}
