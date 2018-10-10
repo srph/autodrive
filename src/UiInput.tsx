@@ -35,6 +35,8 @@ interface UiInputProps {
 }
 
 export default class UiInput extends React.Component<UiInputProps> {
+  input: HTMLInputElement
+
   componentDidMount() {
     if (this.props.autoFocus) {
       setTimeout(() => {
