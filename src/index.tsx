@@ -59,7 +59,7 @@ class App extends React.Component<void, AppState> {
               tooltip="Copy your shareable link either from the desktop version or on the drive.google.com version."
               id="input">
               <UiInput
-                placeholder="Enter file url (e.g., https://drive.google.com/file/u/1/d/0B60b9LKpHsoAVUdOa29YY2dNLVJsRTh02Eo560foUkFgYzc4/view?usp=sharing&export=download)"
+                placeholder="Paste file url here (e.g., https://drive.google.com/file/u/1/d/0B60b9LKpHsoAVUdOa29YY2dNLVJsRTh02Eo560foUkFgYzc4/view?usp=sharing&export=download)"
                 value={this.state.input}
                 onChange={this.handleInputChange}
                 onPaste={this.handleInputPaste}
