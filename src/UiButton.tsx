@@ -12,9 +12,9 @@ ui.Button = styled.button`
   font-family: ${s['font-family-heading']};
   font-size: 10px;
   text-transform: uppercase;
-  color: ${s['color-lavender']};
-  background: ${s['color-white']};
-  border: 1px solid ${s['color-silver']};
+  color: ${s['color-white']};
+  background: ${s['color-dirty-blue']};
+  border: 0;
   border-radius: ${s['border-radius']}px;
   box-shadow: ${s['drop-shadow']};
   cursor: pointer;
@@ -32,7 +32,7 @@ ui.Button = styled.button`
     css`
     &:not(:disabled):hover,
     :focus {
-      transform: translateY(-2px);
+      transform: translateY(-4px);
       box-shadow: ${s['drop-shadow-lower']};
     }
   `}
@@ -41,6 +41,7 @@ ui.Button = styled.button`
     props.preset === 'clear' &&
     css`
     border: 0;
+    color: ${s['color-dirty-blue']};
     box-shadow: initial;
     background: transparent;
   `}

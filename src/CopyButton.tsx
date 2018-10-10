@@ -36,7 +36,7 @@ ui.Text = styled.span`
   position: absolute;
   bottom: 0;
   left: 50%;
-  color: ${s['color-lavender']};
+  color: ${s['color-dark-blue']};
   animation-name: ${kf.Floatee};
   animation-iteration-count: 1;
   animation-duration: 300ms;

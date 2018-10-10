@@ -9,7 +9,6 @@ import UiInput from './UiInput'
 import UiTransitionFadeIn from './UiTransitionFadeIn'
 import CopyButton from './CopyButton'
 import UiButton from './UiButton'
-import Tip from './Tip'
 import Footer from './Footer'
 import UiTooltip from './UiTooltip'
 import * as utils from './utils'
@@ -87,7 +86,7 @@ class App extends React.Component<void, AppState> {
             </UiField>
           </UiTransitionFadeIn>
         )}
-        <Tip />
+
         <Footer />
       </UiContainer>
     )

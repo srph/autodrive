@@ -9,6 +9,7 @@ export default {
   'color-red': '#FC6D6B',
   'color-blue': '#1E6EF9',
   'color-sky-blue': '#5b96fb',
+  'color-dirty-blue': '#00072E',
   'color-green': '#01dc87',
   'color-lavender': '#43458B',
   'color-light-lavender': '#6466bf',

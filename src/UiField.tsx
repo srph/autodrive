@@ -34,7 +34,6 @@ ui.Label = styled.label`
   font-size: 12px;
   margin-bottom: 8px;
   text-transform: uppercase;
-  color: ${s['color-dark-dark-silver']};
 `
 ui.LabelError = styled.div`
   font-size: 10px;

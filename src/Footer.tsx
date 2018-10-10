@@ -4,14 +4,14 @@ import s from './styles'
 
 const ui = {}
 ui.Wrapper = styled.div`
-  margin-top: 48px;
+  margin-top: 144px;
   font-family: ${s['font-family']};
   font-size: ${s['font-size']};
   background: ${s['color-light-silver']};
   text-align: center;
   color: ${s['color-dark-silver']};
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 2;
 
   a {
     color: ${s['color-dark-silver']};
