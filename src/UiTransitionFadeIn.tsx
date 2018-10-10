@@ -1,8 +1,7 @@
 import * as React from 'react'
 import styled, { keyframes } from 'styled-components'
-import s from './styles'
 
-const kf = {}
+const kf = {} as any
 kf.fadeDownIn = keyframes`
   0% {
     opacity: 0;
@@ -27,9 +26,9 @@ kf.fadeUpIn = keyframes`
   }
 `
 
-const ui = {}
+const ui = {} as any
 ui.Wrapper = styled.div`
-  animation-name: ${props => (props.direction === 'up' ? kf.fadeUpIn : kf.fadeDownIn)};
+  animation-name: ${(props: UiTransitionFadeInProps)  => (props.direction === 'up' ? kf.fadeUpIn : kf.fadeDownIn)};
   animation-duration: 1000ms;
   animation-timing-function: ease;
   animation-iteration-count: 1;
@@ -40,10 +39,12 @@ interface UiTransitionFadeInProps {
   children: JSX.Element
 }
 
-export default function UiTransitionFadeIn(props: UiTransitionFadeInProps) {
+const UiTransitionFadeIn: React.SFC<UiTransitionFadeInProps> = (props) => {
   return <ui.Wrapper direction={props.direction}>{props.children}</ui.Wrapper>
 }
 
 UiTransitionFadeIn.defaultProps = {
   direction: 'down'
 }
+
+export default UiTransitionFadeIn

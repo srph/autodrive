@@ -17,7 +17,7 @@ interface AppState {
   output: string
 }
 
-class App extends React.Component<void, AppState> {
+class App extends React.Component<{}, AppState> {
   state: AppState = {
     input: '',
     output: ''
@@ -25,7 +25,7 @@ class App extends React.Component<void, AppState> {
 
   outputField?: JSX.Element
 
-  getValidationErrorMessage = () => {
+  getValidationErrorMessage = (): string => {
     if (!this.state.input.length) {
       return 'Please enter an input.'
     }
@@ -38,7 +38,7 @@ class App extends React.Component<void, AppState> {
   }
 
   render() {
-    const isValid = this.state.input.length && utils.isValidGdriveUrl(this.state.input)
+    const isValid: boolean = Boolean(this.state.input.length) && utils.isValidGdriveUrl(this.state.input)
 
     return (
       <UiContainer>
@@ -75,9 +75,7 @@ class App extends React.Component<void, AppState> {
                 <UiButton preset="clear" onClick={this.handleReset}>
                   Reset
                 </UiButton>,
-                <CopyButton text="Output" value={this.state.output}>
-                  Copy
-                </CopyButton>
+                <CopyButton text="Output" value={this.state.output} />
               ]}
               tooltip="Don't forget to give permissions to anyone with the link!"
               id="output">

@@ -7,7 +7,7 @@ interface UiHeaderProps {
   subline: string
 }
 
-const ui = {}
+const ui = {} as any
 ui.Wrapper = styled.div`
   flex-direction: column;
   display: flex;

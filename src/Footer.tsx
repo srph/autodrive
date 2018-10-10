@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import s from './styles'
 
-const ui = {}
+const ui = {} as any
 ui.Wrapper = styled.div`
   margin-top: 144px;
   font-family: ${s['font-family']};

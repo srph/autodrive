@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled, { css } from 'styled-components'
 import s from './styles'
 
-const ui = {}
+const ui = {} as any
 ui.Button = styled.button`
   display: inline-block;
   height: 26px;
@@ -27,7 +27,7 @@ ui.Button = styled.button`
     cursor: not-allowed;
   }
 
-  ${props =>
+  ${(props: UiButtonProps) =>
     props.preset !== 'clear' &&
     css`
     &:not(:disabled):hover,
@@ -37,7 +37,7 @@ ui.Button = styled.button`
     }
   `}
 
-  ${props =>
+  ${(props: UiButtonProps) =>
     props.preset === 'clear' &&
     css`
     border: 0;
@@ -46,7 +46,7 @@ ui.Button = styled.button`
     background: transparent;
   `}
 
-  ${props =>
+  ${(props: UiButtonProps) =>
     props.preset === 'primary' &&
     css`
     color: ${s['color-white']};

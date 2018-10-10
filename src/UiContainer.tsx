@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import s from './styles'
 
-const ui = {}
+const ui = {} as any
 ui.Wrapper = styled.div`
   font-family: ${s['font-family']};
   font-size: ${s['font-size']};
@@ -43,7 +43,11 @@ ui.Container = styled.div`
   z-index: 500;
 `
 
-export default function Container({ children }) {
+interface UiContainerProps {
+  children: (JSX.Element | boolean)[]
+}
+
+export default function UiContainer({ children }: UiContainerProps) {
   return (
     <ui.Wrapper>
       <ui.Bg>
