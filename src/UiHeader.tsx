@@ -4,6 +4,7 @@ import s from './styles'
 
 interface UiHeaderProps {
   children: string
+  subline: string
 }
 
 const ui = {}
@@ -39,7 +40,7 @@ ui.SubHeader = styled.h3`
   color: ${s['color-dark-silver']};
 `
 
-export default function UiHeader({ children }: UiHeaderProps) {
+export default function UiHeader({ children, subline }: UiHeaderProps) {
   return (
     <ui.Wrapper>
       <ui.Header>
@@ -47,7 +48,7 @@ export default function UiHeader({ children }: UiHeaderProps) {
         <ui.HeaderLine />
       </ui.Header>
 
-      <ui.SubHeader>Generate direct-download links from a Google Drive URL.</ui.SubHeader>
+      <ui.SubHeader>{subline}</ui.SubHeader>
     </ui.Wrapper>
   )
 }

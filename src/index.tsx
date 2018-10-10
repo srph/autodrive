@@ -44,7 +44,7 @@ class App extends React.Component<void, AppState> {
 
     return (
       <UiContainer>
-        <UiHeader>Autodrive</UiHeader>
+        <UiHeader subline="Generate direct-download links from a Google Drive URL.">Autodrive</UiHeader>
 
         {!this.state.output.length && (
           <UiTransitionFadeIn>
