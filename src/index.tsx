@@ -51,7 +51,7 @@ class App extends React.Component<void, AppState> {
               label="Enter Google Drive URL"
               actions={
                 <UiTooltip text={this.getValidationErrorMessage()} disabled={isValid}>
-                  <UiButton onClick={this.handleFormat} disabled={!isValid}>
+                  <UiButton onClick={this.handleGenerate} disabled={!isValid}>
                     Generate
                   </UiButton>
                 </UiTooltip>
