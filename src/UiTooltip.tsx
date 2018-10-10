@@ -33,7 +33,7 @@ ui.Arrow = styled.div`
   border-left-color: rgba(0,0,0,0.6);
 `
 ui.Trigger = styled.div`
-  button {
+  button:disabled {
     /* https://github.com/facebook/react/issues/4251#issuecomment-267004045 */
     pointer-events: none;
   }
