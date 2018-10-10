@@ -82,7 +82,7 @@ class App extends React.Component<void, AppState> {
               ]}
               tooltip="Don't forget to give permissions to anyone with the link!"
               id="output">
-              <UiInput readonly value={this.state.output} />
+              <UiInput readonly autoFocus value={this.state.output} />
             </UiField>
           </UiTransitionFadeIn>
         )}
